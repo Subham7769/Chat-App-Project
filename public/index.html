@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" class="User_form" id="form">
+        <h1 >Join Chat</h1>
+        <p>Username</p>
+        <input type="text" placeholder="User Name" id="Username_input">
+        <button id="join_chat" type="submit">Join Chat</button>
+    </form>
+    <div class="chatroom-Container" id="chatroomContainer">
+        <div class="chatroom-Header">Let's Chat</div>
+        <div class="messages" id="messages">
+            <!-- <div class="message">hey</div>
+            <div class="message sent">hi</div> -->
+        </div>
+        <div class="CreateMessage">
+            <input type="text" placeholder="Message..." id="Message">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+<!-- CDN to Inject IO logic In frontend code -->
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
